@@ -586,9 +586,7 @@ def main():
                     min_dist = _min_stop_distance(MT5_CONFIG['symbol'])
 
                     # همیشه از fib 1.0 استفاده می‌کنیم
-                    dif = abs(state.fib_levels['0.0'] - state.fib_levels['1.0']) * 1.3
-                    candidate_sl = state.fib_levels['0.0'] - dif
-                    candidate_sl = round(candidate_sl, 5)
+                    candidate_sl = state.fib_levels['1.0']
 
                     min_pip_dist = 2  # حداقل 2 پیپ واقعی
                     pip_size = _pip_size_for(MT5_CONFIG['symbol'])
@@ -751,9 +749,7 @@ def main():
                     min_dist = _min_stop_distance(MT5_CONFIG['symbol'])
 
                     # همیشه از fib 1.0 استفاده می‌کنیم
-                    dif = abs(state.fib_levels['0.0'] - state.fib_levels['1.0']) * 1.3
-                    candidate_sl = state.fib_levels['0.0'] + dif
-                    candidate_sl = round(candidate_sl, 5)
+                    candidate_sl = state.fib_levels['1.0']
 
                     min_pip_dist = 2.0
                     pip_size = _pip_size_for(MT5_CONFIG['symbol'])
